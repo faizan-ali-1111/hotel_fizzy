@@ -11,14 +11,14 @@
         function openMenu(){
             var x=document.getElementById("navItem");
             
-            if(x.style.display=="block"){
+            if(x.className=="navItems"){
                 
-                x.style.display="none";
+                x.className +=" ncc";
                 
             }
             else{
                 
-                x.style.display="block"
+                x.className="navItems"
             }
         }
         function change(){
