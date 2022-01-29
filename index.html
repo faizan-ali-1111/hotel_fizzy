@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzy Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function openMenu(){
+            var x=document.getElementById("navItem");
+            
+            if(x.style.display=="block"){
+                
+                x.style.display="none";
+                
+            }
+            else{
+                
+                x.style.display="block"
+            }
+        }
+        function change(){
+            var x=document.getElementById("navi")
+            var y=document.getElementsByClassName("navItem1")
+            if(document.body.scrollTop>150 ||document.documentElement.scrollTop>150){
+                x.style.backgroundColor="rgba(0,0,0,0.7)";
+                y[0].style.border="2px solid white"
+                y[1].style.border="2px solid white"
+                y[2].style.border="2px solid white"
+                y[3].style.border="2px solid white"
+            }
+            else{
+                x.style.backgroundColor="royalblue"
+                y[0].style.border="2px solid royalblue"
+                y[1].style.border="2px solid royalblue"
+                y[2].style.border="2px solid royalblue"
+                y[3].style.border="2px solid royalblue"
+                
+                
+            }
+        }
+    </script>
+</head>
+<body onscroll="change()" >
+   
+    <section id="mlogo" class="mainlogo outhovering">
+        <img src="./images/logo1.png" alt="">
+    </section>
+    <section class="header-container" >
+        
+        <nav class="navbar outhovering" id="navi">
+            <i class="fas fa-bars menuicon" onclick="openMenu()" id="hello"></i>
+            
+            <ul class="navItems" id="navItem">
+                <li><a class="navItem1" href="#mlogo" >Home</a></li>
+                <li><a class="navItem1" href="#foo">Foods</a></li>
+                <li><a class="navItem1" href="#about">About Us</a></li>
+                
+                <li><a class="navItem1" href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="home outhovering"  id="home">
+        <h1>Hotel Fizzy</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id repellendus vel similique at, ullam delectus sapiente ducimus doloribus 
+        labore unde error nostrum pariatur ut, magni reiciendis atque ratione. Doloribus a ex in.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id repellendus vel similique at, ullam delectus sapiente ducimus doloribus 
+        labore unde error nostrum pariatur ut, magni reiciendis atque ratione. Doloribus a ex in.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id repellendus vel similique at, ullam delectus sapiente ducimus doloribus 
+        labore unde error nostrum pariatur ut, magni reiciendis atque ratione. Doloribus a ex in.
+        </p>
+    </section>
+    <section class="food outhovering" id="foo">
+        <div class="f1">
+            <h1>Pizza</h1>
+            <img src="./images/pizz.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="f1">
+            <h1>Burger</h1>
+            <img src="./images/burg.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="f1">
+            <h1>Momos</h1>
+            <img src="./images/momos.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="f1">
+            <h1>french Fries</h1>
+            <img src="./images/french.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="f1">
+            <h1>Panipuri</h1>
+            <img src="./images/panipuri.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="f1">
+            <h1>Noodles</h1>
+            <img src="./images/noodles.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+    </section>
+    <section class="footer">
+       <div class="abt" id="about">
+           <div>
+            <span style="color: rgb(186, 188, 194);">About</span>&nbsp;<span style="color: royalblue;">Us</span>
+           </div>
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo, commodi molestiae asperiores eveniet odio, illo saepe a consectetur animi blanditiis 
+               fugiat distinctio numquam tenetur error enim? Sapiente, fuga molestiae?
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis explicabo, commodi molestiae asperiores eveniet odio, illo saepe a consectetur animi blanditiis 
+               fugiat distinctio numquam 
+               
+           </p>
+           <div>
+            <a href=""><i class="fab fa-facebook icons"></i></a>
+            <a href=""><i class="fab fa-linkedin  icons"></i></a>
+            <a href=""><i class="fab fa-twitter  icons"></i></a>
+            <a href=""><i class="fab fa-instagram  icons"></i></a>
+            <a href=""><i class="fab fa-youtube  icons"></i></a>
+           </div>
+       </div>
+       <div class="cnt" id="contact">
+        <div>
+            <span style="color: rgb(186, 188, 194);">Contact</span>&nbsp;<span style="color: royalblue;">Us</span>
+        </div>
+           
+            <textarea name="" id="" cols="15" rows="6" placeholder="Type here..."></textarea>
+           
+           <br>
+           <button>send</button>
+       </div> 
+    </section>
+    <section class="cright">
+        <div>
+            <p>&copy; 2021 All Rights Reserved</p>
+        </div>
+    </section>
+</body>
+</html>
