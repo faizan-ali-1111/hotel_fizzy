@@ -25,8 +25,8 @@ body{
     top:0;
     
 }
-ul{ 
-    display: flex;
+ul li{
+    display: inline-block;
 }
 ul li{
     list-style-type:none;
@@ -71,10 +71,7 @@ ul li{
     border-radius: 30px;
     padding: 10px;
 }
-.menuicon{
-    display: none !important;
-    visibility: hidden;
-}
+
 
 .home{
     display: flex;
@@ -250,23 +247,18 @@ ul li{
 
 
 
+span{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
 @media only screen and (max-width:670px){
+    span{
+        display: block;
+    }
     .navbar{
-        flex-direction: column;
-        
-        
-    }
-    .navbar .logo{
-        display: inline;
-        font-size: 20px;
-        width: fit-content;
-        border-radius: 20px;
-        padding: 5px;
-    }
-    ul{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: column;    
     }
     ul li {
         margin: 12px;
@@ -275,20 +267,13 @@ ul li{
     ul li a{
         padding: 2px;
     }
-    #navItem{
-        
+    ul li{
+        display: block;
+    }
+    ul{
         display: none;
-
-        
     }
-    .logo{
-        display: none !important;
-    }
-    .menuicon{
-        color: white;
-        display: block !important;
-        visibility: visible;
-    }
+     
     .home h1{
         font-size: 20px;
     }
@@ -309,6 +294,7 @@ ul li{
     .cright{
         font-size: 8px;
     }
+    
     
 
 }
