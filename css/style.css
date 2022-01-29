@@ -25,10 +25,9 @@ body{
     top:0;
     
 }
+
 ul li{
     display: inline-block;
-}
-ul li{
     list-style-type:none;
     font-size: 24px;
     font-weight: bold;
@@ -40,6 +39,9 @@ ul li a{
     color: white;
     border: 2px solid royalblue;
     transition: 0.3s ease;
+}
+.navItem{
+    display: block;
 }
 
 .navItem1:hover{
@@ -295,6 +297,11 @@ span{
         font-size: 8px;
     }
     
-    
+    .navItems.ncc{
+        display: block;
+    }
+    .ncc{
+        display: none;
+    }
 
 }
