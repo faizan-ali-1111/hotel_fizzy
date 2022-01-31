@@ -247,16 +247,14 @@ ul li{
     
 }
 
-
-
-span{
+.burgericon{
     color: white;
     font-size: 28px;
     cursor: pointer;
     display: none;
 }
 @media only screen and (max-width:670px){
-    span{
+    .burgericon{
         display: block;
     }
     .navbar{
@@ -287,8 +285,12 @@ span{
     .footer{
         flex-direction: column;
     }
+    .abt{
+        width: 100%;
+    }
     .cnt{
         margin-top: 12px;
+        width: 95%;
     }
     .footer p{
         padding: 12px;
